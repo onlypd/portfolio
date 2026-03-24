@@ -2,11 +2,6 @@ import React from 'react';
 import SectionWrapper from './SectionWrapper';
 import { motion } from 'framer-motion';
 
-/*
-  Skills: Organized into clear categories with clean card layout.
-  Each category has an icon, title, and list of technologies.
-*/
-
 const skillCategories = [
   {
     title: 'Backend',

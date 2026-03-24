@@ -1,8 +1,5 @@
 import React from 'react';
 
-/*
-  Footer: Minimal footer with copyright and back-to-top functionality.
-*/
 const Footer = () => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });

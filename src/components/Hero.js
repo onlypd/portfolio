@@ -2,13 +2,6 @@ import React from 'react';
 import profile from "../assets/profile.jpg"
 import { motion } from 'framer-motion';
 
-/*
-  Hero: The first thing visitors see.
-  Clean, bold, and immediately communicates who you are.
-  
-  REPLACE: Update the profile image by placing your photo at
-  src/assets/profile.jpg and importing it, or use the placeholder below.
-*/
 const Hero = () => {
   const scrollTo = (id) => {
     const el = document.getElementById(id);
@@ -19,20 +12,19 @@ const Hero = () => {
     }
   };
 
-  // Tech stack badges
   const techStack = ['ASP.NET MVC', '.NET Core', 'C#', 'SQL Server', 'Git'];
 
   return (
     <section id="hero" className="hero-section">
       <div className="hero-inner">
-        {/* Left content */}
+        {}
         <motion.div
           className="hero-content"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: 'easeOut' }}
         >
-          {/* Status badge */}
+          {}
           <motion.div
             className="hero-badge"
             initial={{ opacity: 0, y: 10 }}
@@ -72,7 +64,7 @@ const Hero = () => {
             code, efficient databases, and delivering real business value.
           </motion.p>
 
-          {/* Tech stack badges */}
+          {}
           <motion.div
             className="hero-tech"
             initial={{ opacity: 0, y: 20 }}
@@ -86,7 +78,7 @@ const Hero = () => {
             ))}
           </motion.div>
 
-          {/* CTA Buttons */}
+          {}
           <motion.div
             className="hero-actions"
             initial={{ opacity: 0, y: 20 }}
@@ -112,7 +104,7 @@ const Hero = () => {
           </motion.div>
         </motion.div>
 
-        {/* Right side - Profile Image */}
+        {}
         <motion.div
           className="hero-image-container"
           initial={{ opacity: 0, scale: 0.95 }}
@@ -128,11 +120,11 @@ const Hero = () => {
 
                 </motion.img>
             }
-            {/* Decorative elements */}
+            {}
             <div className="hero-image-ring" />
           </div>
 
-          {/* Floating experience card */}
+          {}
           <motion.div
             className="experience-float-card"
             initial={{ opacity: 0, x: 20 }}

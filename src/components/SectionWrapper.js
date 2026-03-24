@@ -1,10 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-/*
-  SectionWrapper: Reusable wrapper for all main sections.
-  Handles consistent padding, max-width, and fade-in animation.
-*/
+
 const SectionWrapper = ({ id, children, className = '' }) => {
   return (
     <section id={id} className={`section ${className}`}>

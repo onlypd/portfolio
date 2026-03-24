@@ -2,11 +2,6 @@ import React from 'react';
 import SectionWrapper from './SectionWrapper';
 import { motion } from 'framer-motion';
 
-/*
-  Projects: Showcase of work with clean card design.
-  REPLACE: Update with your actual projects, GitHub links, and live URLs.
-*/
-
 const projects = [
   {
     title: 'RoboRewards - Loyalty Based Program',
@@ -53,7 +48,7 @@ const Projects = () => {
             viewport={{ once: true }}
             transition={{ delay: index * 0.12, duration: 0.5 }}
           >
-            {/* Project number badge */}
+            {}
             <div className="project-number">
               {String(index + 1).padStart(2, '0')}
             </div>
@@ -62,7 +57,7 @@ const Projects = () => {
               <h3 className="project-title">{project.title}</h3>
               <p className="project-description">{project.description}</p>
 
-              {/* Tech stack tags */}
+              {}
               <div className="project-tech">
                 {project.techStack.map((tech, i) => (
                   <span key={i} className="project-tech-tag">
@@ -71,7 +66,7 @@ const Projects = () => {
                 ))}
               </div>
 
-              {/* Action buttons */}
+              {}
               <div className="project-actions">
                 {project.githubUrl && (
                   <a

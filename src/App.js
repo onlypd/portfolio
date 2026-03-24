@@ -11,11 +11,9 @@ import './App.css';
 
 function App() {
   const { theme } = useTheme();
-  // Track which section is currently in viewport
   const [activeSection, setActiveSection] = useState('hero');
 
   useEffect(() => {
-    // Intersection Observer to highlight nav items based on scroll position
     const sections = document.querySelectorAll('section[id]');
     const observer = new IntersectionObserver(
       (entries) => {
@@ -26,7 +24,7 @@ function App() {
         });
       },
       {
-        rootMargin: '-20% 0px -80% 0px', // Trigger when section is near top
+        rootMargin: '-20% 0px -80% 0px',
         threshold: 0,
       }
     );

@@ -1,10 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ThemeToggle from './ThemeToggle';
 
-/*
-  Navbar: Sticky navigation with section highlighting.
-  Collapses into a hamburger menu on mobile.
-*/
 const navLinks = [
   { id: 'hero', label: 'Home' },
   { id: 'skills', label: 'Skills' },
@@ -17,7 +13,6 @@ const Navbar = ({ activeSection }) => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
-  // Add shadow to navbar after scrolling
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
@@ -26,11 +21,10 @@ const Navbar = ({ activeSection }) => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Smooth scroll to section when nav link is clicked
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
-      const offset = 80; // Account for sticky navbar height
+      const offset = 80;
       const top = element.getBoundingClientRect().top + window.scrollY - offset;
       window.scrollTo({ top, behavior: 'smooth' });
     }
@@ -40,7 +34,7 @@ const Navbar = ({ activeSection }) => {
   return (
     <nav className={`navbar ${scrolled ? 'navbar-scrolled' : ''}`}>
       <div className="navbar-inner">
-        {/* Logo / Brand */}
+        {}
         <button
           className="navbar-brand"
           onClick={() => scrollToSection('hero')}
@@ -50,7 +44,7 @@ const Navbar = ({ activeSection }) => {
           <span className="brand-text">Portfolio</span>
         </button>
 
-        {/* Desktop Navigation Links */}
+        {}
         <div className={`navbar-links ${mobileOpen ? 'mobile-open' : ''}`}>
           {navLinks.map((link) => (
             <button
@@ -59,7 +53,7 @@ const Navbar = ({ activeSection }) => {
               onClick={() => scrollToSection(link.id)}
             >
               {link.label}
-              {/* Active indicator line */}
+              {}
               {activeSection === link.id && (
                 <span className="nav-indicator" />
               )}
@@ -68,7 +62,7 @@ const Navbar = ({ activeSection }) => {
           <ThemeToggle />
         </div>
 
-        {/* Mobile hamburger button */}
+        {}
         <button
           className={`hamburger ${mobileOpen ? 'open' : ''}`}
           onClick={() => setMobileOpen(!mobileOpen)}

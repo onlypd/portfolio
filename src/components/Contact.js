@@ -2,11 +2,6 @@ import React from 'react';
 import SectionWrapper from './SectionWrapper';
 import { motion } from 'framer-motion';
 
-/*
-  Contact: Clean layout with email, LinkedIn, and GitHub links.
-  REPLACE: Update with your actual contact details.
-*/
-
 const contactLinks = [
   {
     label: 'Email',
@@ -84,7 +79,7 @@ const Contact = () => {
           ))}
         </div>
 
-        {/* Direct CTA */}
+        {}
         <motion.div
           className="contact-cta"
           initial={{ opacity: 0, y: 20 }}

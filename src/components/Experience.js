@@ -2,10 +2,6 @@ import React from 'react';
 import SectionWrapper from './SectionWrapper';
 import { motion } from 'framer-motion';
 
-/*
-  Experience: Professional timeline layout.
-  REPLACE: Update with your actual work experience details.
-*/
 
 const experiences = [
   {
@@ -62,14 +58,14 @@ const Experience = () => {
             viewport={{ once: true }}
             transition={{ delay: index * 0.15, duration: 0.5 }}
           >
-            {/* Timeline connector line */}
+            {}
             <div className="timeline-connector">
               <div className="timeline-dot" />
               {index < experiences.length - 1 && <div className="timeline-line" />}
             </div>
 
             <div className="experience-content">
-              {/* Header: Role + Company */}
+              {}
               <div className="experience-header">
                 <div className="experience-header-left">
                   <h3 className="experience-role">{exp.role}</h3>
@@ -81,17 +77,17 @@ const Experience = () => {
                 </div>
               </div>
 
-              {/* Description */}
+              {}
               <p className="experience-description">{exp.description}</p>
 
-              {/* Responsibilities */}
+              {}
               <ul className="experience-responsibilities">
                 {exp.responsibilities.map((item, i) => (
                   <li key={i}>{item}</li>
                 ))}
               </ul>
 
-              {/* Tech tags */}
+              {}
               <div className="experience-tech">
                 {exp.technologies.map((tech, i) => (
                   <span key={i} className="tech-tag">
