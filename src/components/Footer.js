@@ -12,7 +12,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-inner">
         <p className="footer-text">
-          © {new Date().getFullYear()} Your Name. Built with React.
+          © {new Date().getFullYear()} Param Dange
         </p>
         <button className="back-to-top" onClick={scrollToTop} aria-label="Back to top">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

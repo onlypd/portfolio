@@ -812,14 +812,21 @@ main {
 }
 
 .project-number {
-  font-size: 48px;
+  font-size: 42px;
   font-weight: 700;
-  color: var(--color-bg-tertiary);
-  letter-spacing: -0.04em;
+  color: color-mix(in srgb, var(--color-text-primary) 70%, transparent);
+  letter-spacing: -0.03em;
   line-height: 1;
-  flex-shrink: 0;
   min-width: 60px;
-  transition: color 0.2s ease;
+  transition: all 0.25s ease;
+}
+
+.project-card:hover .project-number {
+  color: var(--color-text-primary);
+}
+.project-card:hover .project-number {
+  color: var(--color-text-primary);
+  opacity: 1;
 }
 
 .project-card:hover .project-number {

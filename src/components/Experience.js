@@ -10,9 +10,8 @@ import { motion } from 'framer-motion';
 const experiences = [
   {
     role: 'Software Developer',
-    company: 'Your Company Name',
-    period: 'Jan 2023 – Present',
-    duration: '1.8 years',
+    company: 'SuvyaWeb',
+    period: 'Jun 2024 – Apr 2026',
     type: 'Full-time',
     description:
       'Developing and maintaining enterprise web applications using ASP.NET MVC and .NET Core. Collaborating with cross-functional teams to deliver features that serve thousands of users.',
@@ -20,27 +19,25 @@ const experiences = [
       'Built and maintained web applications using ASP.NET MVC, .NET Core, and C#',
       'Designed and optimized SQL Server databases with stored procedures and complex queries',
       'Developed RESTful APIs consumed by frontend applications',
-      'Implemented authentication, authorization, and role-based access control',
-      'Participated in code reviews and followed Agile/Scrum methodologies',
-      'Deployed applications on IIS and managed production environments',
+      'Developed SDK of POS Terminals',
+      'Worked on POS (Point on sale) module',
+      'Build a Microsoft Project - AI Data Talk Admin Panel - Voice to transcription and emotions.',
     ],
-    technologies: ['C#', 'ASP.NET MVC', '.NET Core', 'SQL Server', 'Entity Framework', 'JavaScript', 'Git'],
+    technologies: ['C#', 'ASP.NET MVC', '.NET Core', 'SQL Server', 'Entity Framework', 'JavaScript', 'Git', 'React JS'],
   },
   {
-    role: 'Intern – Software Development',
-    company: 'Previous Company Name',
-    period: 'Jul 2022 – Dec 2022',
-    duration: '6 months',
+    role: 'Intern – Software Developer',
+    company: 'SuvyaWeb',
+    period: 'Jun 2024 - Feb 2025',
     type: 'Internship',
     description:
       'Gained hands-on experience in full-stack web development, working on internal tools and learning enterprise software development practices.',
     responsibilities: [
-      'Assisted in developing internal management tools using ASP.NET',
-      'Wrote SQL queries and helped optimize database performance',
-      'Created responsive UI components using HTML, CSS, and Bootstrap',
-      'Learned version control workflows using Git and GitHub',
+      'Learned C#, MVC, .Net, .Net Core, OOPS, SQL Server',
+      'Created Ecommerce website',
+      'Created responsive UI components using HTML, CSS, and Bootstrap'
     ],
-    technologies: ['C#', 'ASP.NET', 'SQL Server', 'HTML/CSS', 'Bootstrap', 'Git'],
+    technologies: ['C#', 'OOPS', 'ASP.NET', 'SQL Server', 'HTML/CSS', 'Bootstrap'],
   },
 ];
 
@@ -51,7 +48,7 @@ const Experience = () => {
         <span className="section-label">Career</span>
         <h2 className="section-title">Work Experience</h2>
         <p className="section-subtitle">
-          My professional journey building production applications.
+          My professional journey building web applications.
         </p>
       </div>
 

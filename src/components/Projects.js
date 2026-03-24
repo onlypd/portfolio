@@ -9,32 +9,27 @@ import { motion } from 'framer-motion';
 
 const projects = [
   {
-    title: 'Employee Management System',
+    title: 'RoboRewards - Loyalty Based Program',
     description:
-      'A comprehensive web application for managing employee records, attendance tracking, leave management, and performance reviews. Built with role-based access control and detailed reporting dashboards.',
+      'This project has been a significant learning experience for me, covering end-to-end development and business operations. It involved multiple roles, complex workflows, and the implementation of advanced features. I independently handled one of the key modules — the POS (Point of Sale) system.',
     techStack: ['ASP.NET MVC', 'C#', 'SQL Server', 'Entity Framework', 'Bootstrap', 'jQuery'],
-    liveUrl: '#',
-    githubUrl: '#',
+    
     featured: true,
   },
   {
-    title: 'E-Commerce Backend API',
+    title: 'AI-Powered Data Talk Admin Panel (Microsoft Project)',
     description:
-      'RESTful API service for an e-commerce platform handling product catalog, user authentication, order processing, and payment integration. Designed for scalability with proper error handling and logging.',
-    techStack: ['.NET Core', 'Web API', 'SQL Server', 'Entity Framework Core', 'JWT Auth'],
-    liveUrl: null,
-    githubUrl: '#',
+      'Worked on an AI-driven admin panel focused on managing conversational data and user interactions. Implemented role-based access control (RBAC) and advanced administrative features. Developed an AI module that processes uploaded voice conversations to generate accurate transcriptions along with emotion analysis, enabling deeper insights into communication patterns.',
+    techStack: ['.NET Core', 'C#', 'AI/ML Integration', 'Speech-to-Text', 'Role-Based Access Control'],
     featured: true,
   },
   {
-    title: 'Inventory Tracking System',
+    title: 'Desktop Application for Binary Analysis & Code Manipulation',
     description:
-      'Internal tool for warehouse inventory management with real-time stock tracking, automated low-stock alerts, supplier management, and comprehensive reporting with export functionality.',
-    techStack: ['ASP.NET MVC', 'C#', 'SQL Server', 'Stored Procedures', 'JavaScript'],
-    liveUrl: '#',
-    githubUrl: '#',
+      'Developed a desktop application as a freelance project focused on binary pattern (AOB) analysis and code manipulation techniques. The tool was designed for research and educational purposes, enabling advanced memory pattern scanning, debugging, and understanding of software behavior in controlled environments.',
+    techStack: ['C#', '.NET', 'Desktop Application', 'Memory Analysis', 'Reverse Engineering Concepts'],
     featured: false,
-  },
+  }
 ];
 
 const Projects = () => {

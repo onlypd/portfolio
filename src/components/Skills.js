@@ -18,12 +18,13 @@ const skillCategories = [
       </svg>
     ),
     skills: [
+      { name: 'ASP.NET MVC', level: 100 },
+      { name: 'Web API', level: 95 },
       { name: 'C#', level: 90 },
-      { name: 'ASP.NET MVC', level: 88 },
-      { name: '.NET Core', level: 85 },
+      { name: '.NET Core', level: 86 },
       { name: 'Entity Framework', level: 82 },
-      { name: 'Web API', level: 85 },
       { name: 'LINQ', level: 80 },
+      { name: 'React JS', level: 55 },
     ],
   },
   {
@@ -37,7 +38,6 @@ const skillCategories = [
     ),
     skills: [
       { name: 'SQL Server', level: 88 },
-      { name: 'T-SQL', level: 85 },
       { name: 'Stored Procedures', level: 82 },
       { name: 'Database Design', level: 78 },
     ],
@@ -69,9 +69,8 @@ const skillCategories = [
     skills: [
       { name: 'Git & GitHub', level: 82 },
       { name: 'Visual Studio', level: 88 },
-      { name: 'Agile / Scrum', level: 75 },
       { name: 'REST APIs', level: 82 },
-      { name: 'IIS Deployment', level: 72 },
+      { name: 'IIS Deployment', level: 45 },
     ],
   },
 ];
