@@ -49,27 +49,38 @@
 }
 
 [data-theme='dark'] {
-  --color-bg: #0a0a0a;
-  --color-bg-secondary: #111111;
-  --color-bg-tertiary: #1a1a1a;
-  --color-surface: #161616;
-  --color-surface-hover: #1c1c1c;
-  --color-border: #262626;
-  --color-border-light: #1e1e1e;
+  /* Base backgrounds (better depth layering) */
+  --color-bg: #0b0f14;
+  --color-bg-secondary: #11161c;
+  --color-bg-tertiary: #161b22;
 
-  --color-text-primary: #ededed;
-  --color-text-secondary: #a0a0a0;
-  --color-text-tertiary: #666666;
-  --color-text-inverse: #0a0a0a;
+  /* Surfaces (cards, navbar, etc) */
+  --color-surface: #141a21;
+  --color-surface-hover: #1a222b;
 
-  --color-accent: #ededed;
-  --color-accent-light: #d4d4d4;
-  --color-accent-subtle: #1e1e1e;
+  /* Borders (visible but subtle) */
+  --color-border: #2a313a;
+  --color-border-light: #20262d;
 
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.2);
-  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.3);
-  --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.4);
-  --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2);
+  /* Text (clear hierarchy) */
+  --color-text-primary: #e6edf3;
+  --color-text-secondary: #9aa6b2;
+  --color-text-tertiary: #6b7785;
+  --color-text-inverse: #0b0f14;
+
+  /* Accent (IMPORTANT — gives life) */
+  --color-accent: #4f8cff;
+  --color-accent-light: #7aa2ff;
+  --color-accent-subtle: rgba(79, 140, 255, 0.12);
+
+  /* Status */
+  --color-green: #22c55e;
+
+  /* Shadows (more realistic) */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.45);
+  --shadow-card: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 /* ============================================================
