@@ -1,6 +1,9 @@
 import React from 'react';
 import SectionWrapper from './SectionWrapper';
 import { motion } from 'framer-motion';
+import { useRef } from "react";
+
+
 
 const skillCategories = [
   {
@@ -19,7 +22,6 @@ const skillCategories = [
       { name: '.NET Core', level: 86 },
       { name: 'Entity Framework', level: 82 },
       { name: 'LINQ', level: 80 },
-      { name: 'React JS', level: 55 },
     ],
   },
   {
@@ -51,6 +53,7 @@ const skillCategories = [
       { name: 'JavaScript', level: 78 },
       { name: 'jQuery', level: 75 },
       { name: 'Bootstrap', level: 80 },
+      { name: 'React JS', level: 55 },
     ],
   },
   {
@@ -70,18 +73,19 @@ const skillCategories = [
   },
 ];
 
-const Skills = () => {
+const Skills = ({ skillsRef }) => {
+  
   return (
     <SectionWrapper id="skills">
       <div className="section-header">
         <span className="section-label">Expertise</span>
-        <h2 className="section-title">Skills & Technologies</h2>
+        <h2 ref={skillsRef} className="section-title">Skills & Technologies</h2>
         <p className="section-subtitle">
           Technologies I work with to build reliable, production-ready applications.
         </p>
       </div>
 
-      <div className="skills-grid">
+      <div ref={skillsRef} className="skills-grid">
         {skillCategories.map((category, catIndex) => (
           <motion.div
             key={category.title}

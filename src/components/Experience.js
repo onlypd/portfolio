@@ -1,6 +1,7 @@
 import React from 'react';
 import SectionWrapper from './SectionWrapper';
 import { motion } from 'framer-motion';
+import { useRef } from 'react';
 
 
 const experiences = [
@@ -37,18 +38,18 @@ const experiences = [
   },
 ];
 
-const Experience = () => {
+const Experience = ({ expRef }) => {
   return (
     <SectionWrapper id="experience">
       <div className="section-header">
         <span className="section-label">Career</span>
-        <h2 className="section-title">Work Experience</h2>
+        <h2 ref={expRef} className="section-title">Work Experience</h2>
         <p className="section-subtitle">
           My professional journey building web applications.
         </p>
       </div>
 
-      <div className="experience-timeline">
+      <div ref={expRef} className="experience-timeline">
         {experiences.map((exp, index) => (
           <motion.div
             key={index}

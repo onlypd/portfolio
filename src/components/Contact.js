@@ -40,13 +40,13 @@ const contactLinks = [
   },
 ];
 
-const Contact = () => {
+const Contact = ({contactRef}) => {
   return (
     <SectionWrapper id="contact">
       <div className="contact-container">
         <div className="section-header">
           <span className="section-label">Connect</span>
-          <h2 className="section-title">Get In Touch</h2>
+          <h2 ref={contactRef} className="section-title">Get In Touch</h2>
           <p className="section-subtitle">
             I'm always open to discussing new opportunities, interesting projects,
             or just having a conversation about technology.

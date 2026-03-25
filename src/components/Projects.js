@@ -27,18 +27,18 @@ const projects = [
   }
 ];
 
-const Projects = () => {
+const Projects = ({projRef}) => {
   return (
     <SectionWrapper id="projects">
       <div className="section-header">
         <span className="section-label">Work</span>
-        <h2 className="section-title">Featured Projects</h2>
+        <h2 ref={projRef} className="section-title">Featured Projects</h2>
         <p className="section-subtitle">
           A selection of projects that demonstrate my skills and problem-solving approach.
         </p>
       </div>
 
-      <div className="projects-grid">
+      <div ref={projRef} className="projects-grid">
         {projects.map((project, index) => (
           <motion.div
             key={index}

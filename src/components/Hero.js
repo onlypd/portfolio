@@ -1,8 +1,10 @@
 import React from 'react';
 import profile from "../assets/profile.jpg"
 import { motion } from 'framer-motion';
+import ParticlesBackground from "./ParticlesBackground";
+import { useRef } from "react";
 
-const Hero = () => {
+const Hero = ({ heroRef }) => {
   const scrollTo = (id) => {
     const el = document.getElementById(id);
     if (el) {
@@ -15,7 +17,9 @@ const Hero = () => {
   const techStack = ['ASP.NET MVC', '.NET Core', 'C#', 'SQL Server', 'Git'];
 
   return (
-    <section id="hero" className="hero-section">
+    
+    <section id="hero" className="hero-section" style={{ position: "relative", overflow: "visible" }}>
+      <ParticlesBackground />
       <div className="hero-inner">
         {}
         <motion.div
@@ -41,7 +45,9 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.6 }}
           >
-            Hi, I'm <span className="hero-name">Param Dange</span>
+            <span ref={heroRef} style={{ position: "relative", display: "inline-block" }}>
+              Hi, I'm <span className="hero-name">Param Dange</span>
+            </span>
           </motion.h1>
 
           <motion.h2
@@ -111,7 +117,7 @@ const Hero = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.4, duration: 0.7, ease: 'easeOut' }}
         >
-          <div className="hero-image-wrapper">
+          <div id="companion-hero-image" className="hero-image-wrapper">
             {
                 <motion.img
                     src={profile}
