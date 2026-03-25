@@ -1,7 +1,6 @@
 import React from 'react';
 import SectionWrapper from './SectionWrapper';
 import { motion } from 'framer-motion';
-import { useRef } from "react";
 
 
 

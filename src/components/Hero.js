@@ -2,7 +2,6 @@ import React from 'react';
 import profile from "../assets/profile.jpg"
 import { motion } from 'framer-motion';
 import ParticlesBackground from "./ParticlesBackground";
-import { useRef } from "react";
 
 const Hero = ({ heroRef }) => {
   const scrollTo = (id) => {
